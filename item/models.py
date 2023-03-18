@@ -20,3 +20,7 @@ class Item(models.Model):
      created_at=models.DateField(auto_now_add=True)
      created_by=models.ForeignKey(User,related_name='items',on_delete=models.CASCADE)
 
+     def __str__(self):
+        return self.name
+
+

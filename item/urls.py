@@ -6,6 +6,6 @@ app_name='item'
 
 urlpatterns = [
     path('<int:pk>/',views.detail,name='detail'),
-    path('additem/',views.Addnewitem,name='additem')
-    
+    path('additem/',views.Addnewitem,name='additem'),
+    path('<int:pk>/delete/',views.DeleteItem,name='delete')
 ]

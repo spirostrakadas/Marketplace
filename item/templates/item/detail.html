@@ -23,6 +23,7 @@
                 <p>this is your item!</p>
                 
                 <a href="{% url 'item:delete' item.id %}" class="inline-block mt-6 px-6 py-3 text-lg font-semibold">delete</a>
+                <a href="{% url 'item:edit' item.id %}" class="inline-block mt-6 px-6 py-3 text-lg font-semibold">Edit</a>
             </div>
             {% else %}
             <a href="" class="inline-block mt-6 x-6 text-lg font-semibold bg-teal-500 text-white hover:bg-teal-700 rounded-xl">Contact seller: {{request.user.username}} </a>

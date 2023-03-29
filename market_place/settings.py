@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'item.apps.ItemConfig',
     'dashboard.apps.DashboardConfig',
+    'conversation.apps.ConversationConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
